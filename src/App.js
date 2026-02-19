@@ -50,7 +50,7 @@ function App() {
 
       <main>
         {/* Hero Section */}
-        <section id="home" className="hero-section bg-white section-padding">
+        <section id="home" className="hero-section bg-pearl section-padding">
           <Container>
             <Row className="align-items-center">
               <Col lg={6} className="mb-5 mb-lg-0 mobile-text-center text-lg-start">
@@ -115,7 +115,7 @@ function App() {
         </section>
 
         {/* About Us Section - Premium Overhaul */}
-        <section id="about" className="py-5 bg-white position-relative overflow-hidden">
+        <section id="about" className="py-5 bg-ice position-relative overflow-hidden">
           <div className="about-watermark">ABOUT</div>
           <Container className="py-5">
             <Row className="align-items-center g-5">
@@ -182,8 +182,8 @@ function App() {
           <div className="position-absolute top-0 start-0 translate-middle bg-primary bg-opacity-5 rounded-circle" style={{ width: '400px', height: '400px', zIndex: -1 }}></div>
         </section>
 
-        {/* Services Section - Subtle Teal Background */}
-        <section id="services" className="py-5 section-padding" style={{ backgroundColor: 'var(--accent-teal-light)' }}>
+        {/* Services Section - Premium Mint Background */}
+        <section id="services" className="py-5 section-padding bg-mint-soft">
           <Container className="py-md-5">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -242,7 +242,7 @@ function App() {
         </section>
 
         {/* Why Choose Us */}
-        <section id="why-us" className="py-5 section-padding overflow-hidden bg-white">
+        <section id="why-us" className="py-5 section-padding overflow-hidden bg-pearl">
           <Container className="py-md-5">
             <Row className="align-items-center g-5">
               <Col lg={6} className="order-2 order-lg-1 mobile-text-center text-lg-start">
@@ -331,7 +331,7 @@ function App() {
         </section>
 
         {/* Contact Section - Responsive Overhaul */}
-        <section id="contact" className="py-5 section-padding position-relative">
+        <section id="contact" className="py-5 section-padding position-relative bg-ice">
           <Container className="py-md-5 position-relative" style={{ zIndex: 1 }}>
             <Row className="g-5 align-items-center">
               <Col lg={5} className="mobile-text-center text-lg-start">

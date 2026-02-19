@@ -15,6 +15,23 @@
   --bg-light: #f8fafc;
   --accent-teal: #82c3c9;
   --accent-teal-light: #f0f9fa;
+
+  /* New Medical Soft Palette */
+  --bg-pearl: #fdfdff;
+  --bg-ice: #f4f9fd;
+  --bg-mint-soft: #f2fcfc;
+}
+
+.bg-pearl {
+  background-color: var(--bg-pearl) !important;
+}
+
+.bg-ice {
+  background-color: var(--bg-ice) !important;
+}
+
+.bg-mint-soft {
+  background-color: var(--bg-mint-soft) !important;
 }
 
 html {
