@@ -116,7 +116,6 @@ function App() {
 
         {/* About Us Section - Premium Overhaul */}
         <section id="about" className="py-5 bg-ice position-relative overflow-hidden">
-          <div className="about-watermark">ULTRARADX</div>
           <Container className="py-5">
             <Row className="align-items-center g-5">
               <Col lg={6} className="mobile-text-center text-lg-start">
@@ -424,7 +423,6 @@ function App() {
 
       {/* Footer - Premium Overhaul */}
       <footer className="footer-premium py-5 bg-white border-top border-light overflow-hidden position-relative">
-        <div className="footer-watermark">ULTRARADX</div>
         <Container className="position-relative" style={{ zIndex: 1 }}>
           <Row className="g-5 justify-content-between mb-5">
             <Col lg={4} className="mobile-text-center">
