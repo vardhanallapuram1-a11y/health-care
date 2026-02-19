@@ -1,0 +1,442 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap');
+
+/* Bootstrap Core */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Custom Medical Theme Variables */
+:root {
+  --primary-blue: #004a99;
+  --secondary-blue: #00aeff;
+  --medical-gradient: linear-gradient(135deg, #004a99 0%, #00aeff 100%);
+  --accent-light: #f1f9ff;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --bg-light: #f8fafc;
+  --accent-teal: #82c3c9;
+  --accent-teal-light: #f0f9fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-dark);
+  background-color: #ffffff;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.bg-soft-light {
+  background-color: #f9fbfe;
+  /* Very light cool blue-grey */
+}
+
+.navbar-premium {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Footer Premium Styles */
+.footer-premium {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.footer-watermark {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  font-size: 15rem;
+  font-weight: 900;
+  color: var(--primary-blue);
+  opacity: 0.02;
+  z-index: 0;
+  pointer-events: none;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 20px;
+}
+
+.footer-heading {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-dark);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: var(--medical-gradient);
+  border-radius: 2px;
+}
+
+.mobile-text-center .footer-heading::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-link {
+  font-size: 0.95rem;
+  color: var(--text-muted) !important;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.footer-link:hover {
+  color: var(--primary-blue) !important;
+  padding-left: 8px;
+}
+
+.footer-social-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: var(--text-muted);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid #f1f5f9;
+  text-decoration: none;
+}
+
+.footer-social-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  color: white;
+}
+
+.footer-social-icon.facebook:hover {
+  background: #1877F2;
+  border-color: #1877F2;
+}
+
+.footer-social-icon.twitter:hover {
+  background: #1DA1F2;
+  border-color: #1DA1F2;
+}
+
+.footer-social-icon.linkedin:hover {
+  background: #0A66C2;
+  border-color: #0A66C2;
+}
+
+.footer-social-icon.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: transparent;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Premium Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  color: var(--primary-blue);
+  letter-spacing: -0.01em;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+/* Glassmorphism Navigation */
+.navbar-custom {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 10px 30px rgba(0, 74, 153, 0.08);
+  padding: 0.5rem 0;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  color: var(--text-dark) !important;
+  padding: 0.5rem 1rem !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--secondary-blue) !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--secondary-blue);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 20px;
+}
+
+/* Custom Buttons */
+.btn-premium {
+  background: var(--medical-gradient);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(0, 174, 255, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px rgba(0, 174, 255, 0.3);
+  color: white;
+}
+
+/* Card Styling */
+.medical-card {
+  background: white;
+  border: 1px solid rgba(0, 74, 153, 0.05);
+  border-radius: 24px;
+  padding: 2.5rem;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height: 100%;
+}
+
+.medical-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 74, 153, 0.1);
+}
+
+.card-icon {
+  width: 64px;
+  height: 64px;
+  background: var(--accent-light);
+  color: var(--primary-blue);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 180px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  background: var(--accent-light);
+  color: var(--primary-blue);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.text-gradient {
+  background: var(--medical-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Shadow utilities */
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* Height Utilities */
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+@media (min-width: 768px) {
+  .md-h-16 {
+    height: 4rem;
+  }
+}
+
+/* Stat Boxes - Professional UI/UX Refinement */
+.stat-box {
+  height: 140px;
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 1rem;
+  border: none;
+}
+
+.stat-box.primary {
+  background: #ebeef0;
+  /* Deeper Professional Medical Blue */
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 74, 153, 0.15);
+}
+
+.stat-box.info {
+  background: var(--accent-teal-light);
+  color: #004a99;
+  border: 1px solid rgba(130, 195, 201, 0.3);
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.9;
+}
+
+
+/* Object fit */
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* About Us Premium Styles */
+.about-watermark {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  font-size: 10rem;
+  font-weight: 900;
+  color: var(--primary-blue);
+  opacity: 0.03;
+  z-index: 0;
+  pointer-events: none;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 20px;
+}
+
+.about-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: var(--accent-light);
+  color: var(--primary-blue);
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 74, 153, 0.1);
+}
+
+.section-accent-line {
+  width: 60px;
+  height: 4px;
+  background: var(--medical-gradient);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.about-image-stack {
+  position: relative;
+}
+
+.about-blob-mask {
+  width: 100%;
+  aspect-ratio: 1;
+  background: white;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  overflow: hidden;
+  border: 10px solid white;
+  transition: all 0.5s ease;
+}
+
+.about-blob-mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.about-blob-mask:hover img {
+  transform: scale(1.1);
+}
+
+.about-decoration-dots {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(var(--primary-blue) 1.5px, transparent 1.5px);
+  background-size: 12px 12px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .about-watermark {
+    font-size: 5rem;
+    top: 20px;
+  }
+}
