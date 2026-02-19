@@ -116,7 +116,7 @@ function App() {
 
         {/* About Us Section - Premium Overhaul */}
         <section id="about" className="py-5 bg-ice position-relative overflow-hidden">
-          <div className="about-watermark">ABOUT</div>
+          <div className="about-watermark">ULTRARADX</div>
           <Container className="py-5">
             <Row className="align-items-center g-5">
               <Col lg={6} className="mobile-text-center text-lg-start">
