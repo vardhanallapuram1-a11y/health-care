@@ -181,8 +181,8 @@ function App() {
           <div className="position-absolute top-0 start-0 translate-middle bg-primary bg-opacity-5 rounded-circle" style={{ width: '400px', height: '400px', zIndex: -1 }}></div>
         </section>
 
-        {/* Services Section - Premium Mint Background */}
-        <section id="services" className="py-5 section-padding bg-mint-soft">
+        {/* Services Section - Premium Teal Background */}
+        <section id="services" className="py-5 section-padding bg-teal-soft">
           <Container className="py-md-5">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -241,7 +241,7 @@ function App() {
         </section>
 
         {/* Why Choose Us */}
-        <section id="why-us" className="py-5 section-padding overflow-hidden bg-pearl">
+        <section id="why-us" className="py-5 section-padding overflow-hidden bg-mint-soft">
           <Container className="py-md-5">
             <Row className="align-items-center g-5">
               <Col lg={6} className="order-2 order-lg-1 mobile-text-center text-lg-start">

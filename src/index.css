@@ -19,7 +19,9 @@
   /* New Medical Soft Palette */
   --bg-pearl: #fdfdff;
   --bg-ice: #f4f9fd;
-  --bg-mint-soft: #f2fcfc;
+  --bg-mint-soft: #f0fafa;
+  --bg-teal-soft: #e0f2f1;
+  /* Soft version of the requested teal */
 }
 
 .bg-pearl {
@@ -32,6 +34,10 @@
 
 .bg-mint-soft {
   background-color: var(--bg-mint-soft) !important;
+}
+
+.bg-teal-soft {
+  background-color: var(--bg-teal-soft) !important;
 }
 
 html {
