@@ -134,7 +134,7 @@ function App() {
                   </h2>
                   <div className="vstack gap-4 pe-lg-5">
                     <p className="lead text-muted lh-lg fs-5">
-                      <span className="fw-bold text-dark">RADGRAM Healthcare</span> is committed to advancing the accessibility and affordability of
+                      <span className="fw-bold text-dark">UltraRadX Healthcare</span> is committed to advancing the accessibility and affordability of
                       radiology services internationally.
                     </p>
                     <p className="text-muted lh-lg">
@@ -424,7 +424,7 @@ function App() {
 
       {/* Footer - Premium Overhaul */}
       <footer className="footer-premium py-5 bg-white border-top border-light overflow-hidden position-relative">
-        <div className="footer-watermark">RADGRAM</div>
+        <div className="footer-watermark">ULTRARADX</div>
         <Container className="position-relative" style={{ zIndex: 1 }}>
           <Row className="g-5 justify-content-between mb-5">
             <Col lg={4} className="mobile-text-center">
@@ -476,7 +476,7 @@ function App() {
           </Row>
           <div className="pt-5 border-top border-light d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
             <p className="small text-muted mb-0 order-2 order-md-1">
-              © 2026 <span className="fw-bold text-dark">Radgram Healthcare</span>. All rights reserved.
+              © 2026 <span className="fw-bold text-dark">UltraRadX Healthcare</span>. All rights reserved.
             </p>
             <div className="d-flex gap-4 order-1 order-md-2">
               <a href="#" className="small text-muted text-decoration-none hover-primary transition">Privacy Policy</a>
