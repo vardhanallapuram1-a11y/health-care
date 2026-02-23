@@ -747,7 +747,7 @@ function App() {
 
                   <div className="vstack gap-5">
                     {[
-                      { icon: <Phone size={24} />, label: 'Call Us', value: '+15 737979646' },
+                      { icon: <Phone size={24} />, label: 'Call Us', value: '9582106859 / 8901222201' },
                       { icon: <Mail size={24} />, label: 'Email Us', value: 'ultraradx19@gmail.com' },
                     ].map((item, idx) => (
                       <div className="d-flex flex-column flex-lg-row align-items-center align-items-lg-center gap-4" key={idx}>
