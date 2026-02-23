@@ -73,7 +73,7 @@ function App() {
                     Seamless Connectivity.
                   </h1>
                   <p className="lead text-muted mb-5 pe-lg-5">
-                    We provide high-quality, timely, and accurate teleradiology reporting services to hospitals, imaging centers, and clinics worldwide. Our board-certified radiologists deliver fast turnaround times with a strong commitment to diagnostic excellence and patient care.
+                    We provide high-quality, timely, and accurate teleradiology reporting services to hospitals, imaging centers, and clinics worldwide. Our certified and experienced radiologists with multi-modality expertise deliver fast turnaround times with a strong commitment to diagnostic excellence and patient care.
                   </p>
                   <div className="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
                     <Button className="btn-premium py-3 px-5 shadow-lg border-0" href="#services">
@@ -109,8 +109,8 @@ function App() {
                       <Globe size={28} />
                     </div>
                     <div>
-                      <h4 className="mb-0 fw-bold">100+</h4>
-                      <small className="text-muted text-uppercase fw-bold">Global Sites</small>
+                      <h4 className="mb-0 fw-bold">Multi-Region</h4>
+                      <small className="text-muted text-uppercase fw-bold">Reach</small>
                     </div>
                   </div>
                 </motion.div>
@@ -161,10 +161,10 @@ function App() {
                   {/* Mini stats row */}
                   <div className="about-stats-row mb-4">
                     {[
-                      { value: '99.8%', label: 'Accuracy Rate' },
+                      { value: 'QA', label: 'Peer-Reviewed Quality' },
                       { value: '100k+', label: 'Cases / Year' },
                       { value: '24/7', label: 'Expert Support' },
-                      { value: '100+', label: 'Global Sites' },
+                      { value: 'Global', label: 'Multi-Region Reach' },
                     ].map((stat, i) => (
                       <motion.div
                         key={i}
@@ -254,8 +254,8 @@ function App() {
                       <ShieldCheck size={22} />
                     </div>
                     <div>
-                      <div className="about-float-val">99.8%</div>
-                      <div className="about-float-lbl">Accuracy Rate</div>
+                      <div className="about-float-val" style={{ fontSize: '1rem', fontWeight: 700 }}>Peer-Reviewed</div>
+                      <div className="about-float-lbl">Quality Assurance</div>
                     </div>
                   </motion.div>
 
