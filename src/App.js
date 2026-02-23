@@ -162,7 +162,7 @@ function App() {
                   <div className="about-stats-row mb-4">
                     {[
                       { value: 'QA', label: 'Peer-Reviewed Quality' },
-                      { value: '100k+', label: 'Cases / Year' },
+                      { value: 'Scale', label: 'Scalable Reporting Capacity' },
                       { value: '24/7', label: 'Expert Support' },
                       { value: 'Global', label: 'Multi-Region Reach' },
                     ].map((stat, i) => (
@@ -767,8 +767,7 @@ function App() {
                       <div className="text-center text-lg-start">
                         <div className="text-uppercase small fw-bold text-muted mb-1" style={{ letterSpacing: '1px' }}>Address</div>
                         <div className="h5 fw-bold mb-0 text-dark" style={{ lineHeight: '1.6' }}>
-                          Flat No G-04, Orchid estate Gold Homes,<br />
-                          Greater Noida West Sec 1, Bisrakh, 201306
+                          Registered Office: Greater Noida, India
                         </div>
                       </div>
                     </div>
