@@ -182,10 +182,9 @@ body {
 }
 
 .navbar-premium {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 74, 153, 0.07);
+  box-shadow: 0 2px 16px rgba(0, 74, 153, 0.06);
   transition: all 0.3s ease;
 }
 
@@ -195,9 +194,16 @@ body {
   transition: all 0.2s ease;
 }
 
-.navbar-premium .nav-link:hover {
+.navbar-premium .nav-link:hover,
+.navbar-premium .nav-link.active {
   color: var(--primary-blue) !important;
   transform: translateY(-1px);
+}
+
+/* Remove Bootstrap's default active background on nav links */
+.navbar-premium .nav-link.active {
+  background: transparent !important;
+  font-weight: 700;
 }
 
 /* Footer Premium Styles */
@@ -1173,4 +1179,444 @@ p {
     min-height: 120px;
     width: 50%;
   }
+}
+
+/* ================================================================
+   HERO CTA — Outline Button
+   ================================================================ */
+.btn-outline-hero {
+  border: 2px solid var(--primary-blue);
+  color: var(--primary-blue);
+  background: transparent;
+  border-radius: 50px;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-outline-hero:hover {
+  background: var(--primary-blue);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(0, 74, 153, 0.25);
+}
+
+/* Hero inline text link for sample report */
+.hero-sample-link {
+  color: var(--primary-blue);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  border-bottom: 1px dashed rgba(0, 74, 153, 0.35);
+  padding-bottom: 1px;
+}
+
+.hero-sample-link:hover {
+  opacity: 1;
+  color: var(--secondary-blue);
+}
+
+/* ================================================================
+   TRUST STRIP — Horizontal social-proof bar below hero
+   ================================================================ */
+.trust-strip-section {
+  background: #ffffff;
+  border-top: 1px solid rgba(0, 74, 153, 0.06);
+  border-bottom: 1px solid rgba(0, 74, 153, 0.06);
+  padding: 1.25rem 0;
+}
+
+.trust-strip-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trust-strip-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0.5rem 1.25rem;
+  border-radius: 12px;
+  transition: background 0.25s ease;
+}
+
+.trust-strip-item:hover {
+  background: var(--accent-light);
+}
+
+.trust-strip-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e8f4ff, #d0eaff);
+  color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-strip-label {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  line-height: 1;
+}
+
+.trust-strip-value {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-top: 2px;
+}
+
+@media (max-width: 576px) {
+  .trust-strip-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+  }
+}
+
+/* ================================================================
+   CREDENTIALS SECTION
+   ================================================================ */
+.credentials-section {
+  background: linear-gradient(160deg, #f4f9fd 0%, #ffffff 60%, #f0f7ff 100%);
+}
+
+.credentials-eyebrow {
+  display: inline-block;
+  padding: 0.4rem 1.1rem;
+  background: linear-gradient(135deg, #e8f4ff, #d4ecff);
+  color: var(--primary-blue);
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  border: 1px solid rgba(0, 74, 153, 0.12);
+  text-transform: uppercase;
+}
+
+/* Individual credential card */
+.cred-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2rem;
+  height: 100%;
+  border: 1px solid rgba(0, 74, 153, 0.07);
+  box-shadow: 0 4px 20px rgba(0, 74, 153, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cred-card-highlight {
+  border-color: rgba(0, 123, 189, 0.25);
+  box-shadow: 0 6px 28px rgba(0, 123, 189, 0.1);
+}
+
+.cred-icon-wrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.cred-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0a1628;
+  margin-bottom: 1rem;
+}
+
+.cred-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.cred-list li {
+  font-size: 0.92rem;
+  color: #4a5568;
+  font-weight: 500;
+  padding: 0.3rem 0;
+  border-bottom: 1px dashed rgba(0, 74, 153, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cred-list li:last-child {
+  border-bottom: none;
+}
+
+.cred-stat {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #c07000, #f0a800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.cred-stat-label {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Sample Report CTA button */
+.sample-report-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.85rem 2rem;
+  border: 2px solid var(--primary-blue);
+  border-radius: 50px;
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.sample-report-btn:hover {
+  background: var(--primary-blue);
+  color: #ffffff;
+  box-shadow: 0 12px 28px rgba(0, 74, 153, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ================================================================
+   TURNAROUND TIME (TAT) SECTION
+   ================================================================ */
+.tat-section {
+  background: linear-gradient(160deg, #0a1628 0%, #003366 60%, #004a99 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.tat-section::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 174, 255, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.tat-section .text-gradient {
+  background: linear-gradient(90deg, #00aeff, #82c3c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tat-section h2,
+.tat-section .display-5 {
+  color: #ffffff !important;
+}
+
+.tat-section .text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Eyebrow label */
+.tat-eyebrow {
+  display: inline-block;
+  padding: 0.4rem 1.1rem;
+  background: rgba(0, 174, 255, 0.15);
+  color: #00aeff;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  border: 1px solid rgba(0, 174, 255, 0.3);
+  text-transform: uppercase;
+}
+
+/* Individual TAT card */
+.tat-card {
+  border-radius: 24px;
+  padding: 2.25rem 2rem;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Emergency — red-toned */
+.tat-emergency {
+  background: linear-gradient(145deg, #2d0a0a, #4a1010);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  box-shadow: 0 8px 32px rgba(239, 68, 68, 0.15);
+}
+
+/* Urgent — amber-toned */
+.tat-urgent {
+  background: linear-gradient(145deg, #2d1a00, #4a2e00);
+  border: 1px solid rgba(251, 146, 60, 0.3);
+  box-shadow: 0 8px 32px rgba(251, 146, 60, 0.15);
+}
+
+/* Routine — green-toned */
+.tat-routine {
+  background: linear-gradient(145deg, #0a2d1a, #0d4a28);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+  box-shadow: 0 8px 32px rgba(52, 211, 153, 0.12);
+}
+
+/* Icon ring */
+.tat-icon-ring {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.tat-ring-emergency {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 2px solid rgba(239, 68, 68, 0.4);
+}
+
+.tat-ring-urgent {
+  background: rgba(251, 146, 60, 0.2);
+  color: #fb923c;
+  border: 2px solid rgba(251, 146, 60, 0.4);
+}
+
+.tat-ring-routine {
+  background: rgba(52, 211, 153, 0.2);
+  color: #34d399;
+  border: 2px solid rgba(52, 211, 153, 0.4);
+}
+
+/* Priority badge */
+.tat-badge-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+.tat-emergency .tat-badge-label {
+  color: #f87171;
+}
+
+.tat-urgent .tat-badge-label {
+  color: #fb923c;
+}
+
+.tat-routine .tat-badge-label {
+  color: #34d399;
+}
+
+/* Big time number */
+.tat-time {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 1rem;
+  letter-spacing: -2px;
+}
+
+.tat-time span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.7;
+  letter-spacing: 0;
+}
+
+.tat-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+}
+
+/* Footer note */
+.tat-footer-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+/* ================================================================
+   INSTITUTIONS WE SERVE — CARDS
+   ================================================================ */
+.institution-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1.75rem;
+  height: 100%;
+  border: 1px solid rgba(0, 74, 153, 0.07);
+  box-shadow: 0 4px 16px rgba(0, 74, 153, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.institution-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 74, 153, 0.1);
+}
+
+.institution-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #e8f4ff, #d0eaff);
+  color: var(--primary-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 74, 153, 0.1);
+}
+
+.institution-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0a1628;
+  margin-bottom: 0.5rem;
+}
+
+.institution-desc {
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
 }
