@@ -51,7 +51,7 @@ export default function AboutPage() {
                         </Col>
                         <Col lg={6}>
                             <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}>
-                                <img src="images/Mri.jpg" alt="Modern MRI facility" className="img-fluid rounded-4 shadow-2xl w-100" style={{ objectFit: 'cover', height: '420px' }} />
+                                <img src="images/x-ray.jpg" alt="Modern MRI facility" className="img-fluid rounded-4 shadow-2xl w-100" style={{ objectFit: 'cover', height: '420px' }} />
                             </motion.div>
                         </Col>
                     </Row>

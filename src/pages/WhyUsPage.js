@@ -104,7 +104,7 @@ export default function WhyUsPage() {
                             <div className="why-img-mosaic">
                                 <div className="why-img-row-top">
                                     <motion.div initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="why-img-cell why-img-cell-lg">
-                                        <img src="images/Mri.jpg" alt="Modern MRI machine in clinical facility" className="why-img" />
+                                        <img src="images/back.jpg" alt="Modern MRI machine in clinical facility" className="why-img" />
                                     </motion.div>
                                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.15 }} className="why-img-cell why-img-cell-sm">
                                         <img src="https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?auto=format&fit=crop&q=85&w=400" alt="Radiologist reviewing imaging at workstation" className="why-img" />
