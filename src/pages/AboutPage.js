@@ -111,7 +111,7 @@ export default function AboutPage() {
                     </div>
                     <Row className="g-4">
                         {[
-                            { icon: <GraduationCap size={30} />, bg: 'linear-gradient(135deg,#e8f4ff,#d0eaff)', color: '#004a99', title: 'Radiologist Qualifications', items: ['MD (Radiodiagnosis)', 'DNB Certified', 'Fellowship Trained', 'Subspecialty Expertise'] },
+                            { icon: <GraduationCap size={30} />, bg: 'linear-gradient(135deg,#e8f4ff,#d0eaff)', color: '#004a99', title: 'Radiologist Qualifications', items: ['MBBS', 'MD Radiodiagnosis / DNB Radiology – Postgraduate specialization in Radiology', 'Fellowship training in subspecialties such as Neuroradiology, Musculoskeletal Radiology, and Body Imaging'] },
                             { icon: <Award size={30} />, bg: 'linear-gradient(135deg,#fff0d0,#ffe4a0)', color: '#c07000', title: 'Combined Experience', stat: '15+', statLabel: 'Years of combined clinical & teleradiology practice across CT, MRI, X-Ray, and Ultrasound.' },
                             { icon: <Timer size={30} />, bg: 'linear-gradient(135deg,#d0f0ff,#b5e8f8)', color: '#007bbd', title: 'TAT Commitment', items: ['🚨 Emergency: <30 Minutes', '⚡ Urgent: <2 Hours', '📋 Routine: <12 Hours', '🕐 24/7 Coverage'] },
                             { icon: <BadgeCheck size={30} />, bg: 'linear-gradient(135deg,#d4f1e8,#b8ead8)', color: '#007a4d', title: 'Compliance & Security', items: ['✅ HIPAA-Compliant', '✅ GDPR-Ready', '🔐 End-to-End Encryption', '🛡 Secure DICOM Transfer'] },

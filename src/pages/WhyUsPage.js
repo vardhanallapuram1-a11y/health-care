@@ -20,8 +20,8 @@ const whyItems = [
     {
         icon: <Award size={28} />, color: '#004a99', bg: 'linear-gradient(135deg,#e8f4ff,#d0eaff)',
         title: 'Fellowship-Trained Subspecialists',
-        desc: 'Our radiologists hold MD, DNB, and fellowship qualifications with deep subspecialty expertise. You get the same level of interpretation you would from a senior consultant — remotely, reliably.',
-        points: ['MD Radiodiagnosis & DNB Certified', 'Fellowship in neuro, body & MSK', 'Ongoing CME and subspecialty training', 'Peer-reviewed reporting process'],
+        desc: 'Our radiologists hold MBBS, MD, and DNB qualifications with deep subspecialty fellowship expertise. You get the same level of interpretation you would from a senior consultant.',
+        points: ['MBBS & MD Radiodiagnosis / DNB Radiology', 'Fellowship in Neuro, MSK & Body Imaging', 'Specialization in Radiology Postgraduate study', 'Peer-reviewed reporting process'],
     },
     {
         icon: <ShieldCheck size={28} />, color: '#007a4d', bg: 'linear-gradient(135deg,#d4f1e8,#b8ead8)',
