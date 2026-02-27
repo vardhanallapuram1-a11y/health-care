@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Activity, ShieldCheck, Globe, Award, Clock, ChevronRight, FileText, Zap, Target } from 'lucide-react';
+import { Activity, ShieldCheck, Globe, Award, Clock, ChevronRight, FileText, Zap, Target, Moon } from 'lucide-react';
 
 const PageHero = ({ eyebrow, title, highlight, sub }) => (
     <section style={{ background: 'linear-gradient(135deg,#0a1628 0%,#003366 100%)', paddingTop: '120px', paddingBottom: '60px' }}>
@@ -115,6 +115,45 @@ export default function ServicesPage() {
                                 </motion.div>
                             </Col>
                         ))}
+                    </Row>
+                </Container>
+            </section>
+
+            {/* Nighthawk Featured Section */}
+            <section className="py-5 section-padding" style={{ background: '#f8fafc' }}>
+                <Container>
+                    <Row className="align-items-center g-5">
+                        <Col lg={6}>
+                            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+                                <span className="credentials-eyebrow mb-4 d-inline-block">SPECIALIZED COVERAGE</span>
+                                <h2 className="display-5 fw-bold mt-3 mb-4" style={{ color: '#0a1628' }}>
+                                    Nighthawk <span className="text-gradient">Radiology Reporting</span>
+                                </h2>
+                                <p className="text-muted lh-lg mb-4">
+                                    Nighthawk radiology refers to the model where radiologists interpret and analyse CT, MRI, X-ray & USG imaging during night-time through online teleradiology 24/7/365, making diagnostic findings quicker to obtain. Nighthawk reporting contributes significantly to reduce the turnaround time (TAT), which is very important in emergency/STAT situations.
+                                </p>
+                                <p className="text-muted lh-lg mb-4">
+                                    The primary goal of Nighthawk radiology services is to offer radiology facilities after working hours, especially during nighttime. It would have been difficult to have nighttime radiologists on-site, which becomes difficult using conventional staffing.
+                                </p>
+                                <div className="d-flex align-items-center gap-3 mt-4">
+                                    <div className="p-3 rounded-4 bg-white shadow-sm border" style={{ maxWidth: '400px' }}>
+                                        <div className="small fw-bold text-uppercase mb-2" style={{ color: '#004a99', letterSpacing: '1px' }}>Streamlined Integration</div>
+                                        <p className="small text-muted mb-0">A variety of imaging modalities are covered under Nighthawk services. Multiple subspecialty experts streamline nighttime radiology even further.</p>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </Col>
+                        <Col lg={6}>
+                            <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="position-relative">
+                                <img src="/images/care.jpeg" alt="Nighthawk Radiology Reporting" className="img-fluid rounded-4 shadow-2xl w-100" style={{ objectFit: 'cover', height: '480px' }} />
+                                <div className="position-absolute bottom-0 end-0 m-4 p-3 bg-white rounded-3 shadow-lg border-start border-4 border-primary">
+                                    <div className="d-flex align-items-center gap-2">
+                                        <Moon size={20} className="text-primary" />
+                                        <span className="fw-bold small">24/7 Night Support</span>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </Col>
                     </Row>
                 </Container>
             </section>

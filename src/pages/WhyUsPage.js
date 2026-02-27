@@ -104,14 +104,14 @@ export default function WhyUsPage() {
                             <div className="why-img-mosaic">
                                 <div className="why-img-row-top">
                                     <motion.div initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="why-img-cell why-img-cell-lg">
-                                        <img src="images/back.jpg" alt="Modern MRI machine in clinical facility" className="why-img" />
+                                        <img src="images/img2.jpeg" alt="Modern MRI machine in clinical facility" className="why-img" />
                                     </motion.div>
                                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.15 }} className="why-img-cell why-img-cell-sm">
                                         <img src="https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?auto=format&fit=crop&q=85&w=400" alt="Radiologist reviewing imaging at workstation" className="why-img" />
                                     </motion.div>
                                 </div>
                                 <motion.div initial={{ opacity: 0, scale: 0.97 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.25 }} className="why-img-cell why-img-cell-wide">
-                                    <img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&q=85&w=800" alt="Modern radiology department panoramic view" className="why-img" />
+                                    <img src="images/img1.jpeg" alt="Modern radiology department panoramic view" className="why-img" />
                                 </motion.div>
                             </div>
                         </Col>
@@ -148,7 +148,7 @@ export default function WhyUsPage() {
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                         <h2 className="display-6 fw-bold text-white mb-3">See the UltraRadX Difference</h2>
                         <p className="text-white opacity-75 mb-4 mx-auto" style={{ maxWidth: '500px' }}>
-                            Request a sample anonymized report or speak with our team to start your partnership today.
+                            Request a sample UltraRadX report or speak with our team to start your partnership today.
                         </p>
                         <div className="d-flex gap-3 justify-content-center flex-wrap">
                             <button onClick={() => navigate('/contact')} className="btn-premium py-3 px-5 border-0 d-inline-flex align-items-center gap-2">

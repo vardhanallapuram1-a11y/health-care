@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import {
     Phone, FileText, ChevronRight, Award, ShieldCheck,
-    Activity, GraduationCap, Timer, BadgeCheck, Clock
+    Activity, GraduationCap, Timer, BadgeCheck, Clock, Moon
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -57,11 +57,7 @@ export default function HomePage() {
                                         <FileText size={17} /> Upload a Case
                                     </motion.button>
                                 </div>
-                                <div className="d-flex justify-content-center justify-content-lg-start">
-                                    <button onClick={() => window.open('/UltraRadX-Sample-Report.pdf', '_blank')} className="hero-sample-link d-inline-flex align-items-center gap-2">
-                                        <FileText size={15} /> View Sample UltraRadX Report <ChevronRight size={14} />
-                                    </button>
-                                </div>
+
                             </motion.div>
                         </Col>
                         <Col lg={6}>
@@ -127,8 +123,8 @@ export default function HomePage() {
                         {[
                             { icon: <Activity size={28} />, title: 'CT Scan Reporting', desc: 'Fast, accurate body & neuro CT reads across all urgency levels.' },
                             { icon: <Clock size={28} />, title: 'MRI Interpretation', desc: 'Subspecialty MRI reporting — brain, spine, MSK, abdomen and more.' },
+                            { icon: <Moon size={28} />, title: 'Nighthawk Reporting', desc: 'Expert 24/7/365 night-time reporting for emergency & STAT cases.' },
                             { icon: <ShieldCheck size={28} />, title: 'Emergency STAT', desc: 'Critical reads in under 30 minutes with direct radiologist contact.' },
-                            { icon: <Award size={28} />, title: 'Quality Assurance', desc: 'Peer-reviewed reports with structured discrepancy tracking.' },
                         ].map((s, i) => (
                             <Col md={6} lg={3} key={i}>
                                 <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
