@@ -154,6 +154,9 @@ export default function WhyUsPage() {
                             <button onClick={() => navigate('/contact')} className="btn-premium py-3 px-5 border-0 d-inline-flex align-items-center gap-2">
                                 Get in Touch <ChevronRight size={16} />
                             </button>
+                            <button onClick={() => window.open('/Our Sample Report MRI_Left_Knee_.pdf', '_blank')} className="btn-outline-hero py-3 px-5 d-inline-flex align-items-center gap-2" style={{ borderColor: '#fff', color: '#fff' }}>
+                                View Sample Report <ChevronRight size={16} />
+                            </button>
                         </div>
                     </motion.div>
                 </Container>
