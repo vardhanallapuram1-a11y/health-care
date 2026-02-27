@@ -130,8 +130,8 @@ export default function AboutPage() {
                         ))}
                     </Row>
                     <div className="text-center mt-5">
-                        <button onClick={() => navigate('/contact')} className="sample-report-btn d-inline-flex align-items-center gap-2">
-                            <FileText size={18} /> Request a Sample Anonymized Report <ChevronRight size={16} />
+                        <button onClick={() => window.open('/UltraRadX-Sample-Report.pdf', '_blank')} className="sample-report-btn d-inline-flex align-items-center gap-2">
+                            <FileText size={18} /> View Sample UltraRadX Report <ChevronRight size={16} />
                         </button>
                     </div>
                 </Container>

@@ -36,7 +36,7 @@ export default function ContactPage() {
         { q: 'How quickly can we get onboarded?', a: 'Most institutions are fully onboarded within 48–72 hours. Our team handles PACS/RIS integration, DICOM routing, and report delivery configuration end-to-end.' },
         { q: 'What modalities do you report?', a: 'We report CT, MRI, X-Ray, Ultrasound, and Doppler across all body systems. Subspecialty reads are available for neuro, MSK, body, cardiac, and paediatric imaging.' },
         { q: 'How is patient data protected?', a: 'All imaging data is transmitted via encrypted DICOM channels. We are fully HIPAA-compliant and GDPR-ready. No patient data is ever accessed for purposes outside the reporting workflow.' },
-        { q: 'Do you offer a trial or sample report?', a: 'Yes. We can provide sample anonymized reports across multiple modalities on request. Contact us and we will arrange this within 24 hours.' },
+        { q: 'Do you offer a trial or sample report?', a: 'Yes. We can provide sample UltraRadX reports across multiple modalities on request. Contact us and we will arrange this within 24 hours.' },
         { q: 'What are your pricing models?', a: 'We offer per-study, monthly retainer, and full-service partnership pricing. Contact us with your expected daily volume and we will provide a tailored proposal.' },
     ];
 

@@ -58,8 +58,8 @@ export default function HomePage() {
                                     </motion.button>
                                 </div>
                                 <div className="d-flex justify-content-center justify-content-lg-start">
-                                    <button onClick={() => window.open('/Our Sample Report MRI_Left_Knee_.pdf', '_blank')} className="hero-sample-link d-inline-flex align-items-center gap-2">
-                                        <FileText size={15} /> View Sample Anonymized Report <ChevronRight size={14} />
+                                    <button onClick={() => window.open('/UltraRadX-Sample-Report.pdf', '_blank')} className="hero-sample-link d-inline-flex align-items-center gap-2">
+                                        <FileText size={15} /> View Sample UltraRadX Report <ChevronRight size={14} />
                                     </button>
                                 </div>
                             </motion.div>
