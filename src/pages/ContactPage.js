@@ -26,8 +26,8 @@ export default function ContactPage() {
     };
 
     const contactDetails = [
-        { icon: <Phone size={22} />, label: 'Call Us', value: '9582106859 / 8901222201', color: '#004a99', sub: 'Available 24/7' },
-        { icon: <Mail size={22} />, label: 'Email Us', value: 'ultraradx19@gmail.com', color: '#007a4d', sub: 'We respond within 2 hours' },
+        { icon: <Phone size={22} />, label: 'Call Us', value: '+91 8901222201', color: '#004a99', sub: 'Available 24/7' },
+        { icon: <Mail size={22} />, label: 'Email Us', value: 'info@ultraradx.com', color: '#007a4d', sub: 'We respond within 2 hours' },
         { icon: <MapPin size={22} />, label: 'Registered Office', value: 'Greater Noida, India', color: '#c07000', sub: 'India-based, globally serving' },
         { icon: <Clock size={22} />, label: 'Availability', value: '24 hours · 7 days · 365 days', color: '#007bbd', sub: 'No case left unread' },
     ];
@@ -192,10 +192,10 @@ export default function ContactPage() {
                             <div className="text-white opacity-75 small">We onboard new partners within 48–72 hours.</div>
                         </div>
                         <div className="d-flex gap-3 flex-wrap justify-content-center">
-                            <a href="tel:9582106859" className="btn-premium py-2 px-4 border-0 d-inline-flex align-items-center gap-2" style={{ fontSize: '0.9rem' }}>
+                            <a href="tel:+918901222201" className="btn-premium py-2 px-4 border-0 d-inline-flex align-items-center gap-2" style={{ fontSize: '0.9rem' }}>
                                 <Phone size={15} /> Call Now
                             </a>
-                            <a href="mailto:ultraradx19@gmail.com" className="btn-outline-hero py-2 px-4 d-inline-flex align-items-center gap-2" style={{ borderColor: '#fff', color: '#fff', fontSize: '0.9rem' }}>
+                            <a href="mailto:info@ultraradx.com" className="btn-outline-hero py-2 px-4 d-inline-flex align-items-center gap-2" style={{ borderColor: '#fff', color: '#fff', fontSize: '0.9rem' }}>
                                 <Mail size={15} /> Email Us
                             </a>
                         </div>
