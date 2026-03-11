@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { GraduationCap, Award, Timer, BadgeCheck, ChevronRight, Target, Zap, FileText, ShieldCheck } from 'lucide-react';
+import { GraduationCap, Award, Timer, BadgeCheck, ChevronRight, Target, Zap, FileText, ShieldCheck, Heart } from 'lucide-react';
 
 const PageHero = ({ eyebrow, title, highlight, sub }) => (
     <section style={{ background: 'linear-gradient(135deg,#0a1628 0%,#003366 100%)', paddingTop: '120px', paddingBottom: '60px' }}>
@@ -55,6 +55,29 @@ export default function AboutPage() {
                             </motion.div>
                         </Col>
                     </Row>
+                </Container>
+            </section>
+
+            {/* Dedication */}
+            <section className="dedication-section py-5">
+                <Container>
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="dedication-card text-center"
+                    >
+                        <div className="dedication-decoration"></div>
+                        <div className="dedication-icon-wrap">
+                            <Heart size={40} fill="currentColor" />
+                        </div>
+                        {/* <span className="dedication-eyebrow">DEDICATION</span> */}
+                        <h2 className="dedication-title">Dedicated</h2>
+                        <h3 className="dedication-subtitle">Rajkumar and Santosh</h3>
+                        <p className="dedication-text">
+                            "With deepest gratitude, UltraRadX is proudly dedicated to my parents, Mr. Rajkumar and Mrs. Santosh, whose sacrifices, wisdom, and blessings are the true foundation of this journey."
+                        </p>
+                    </motion.div>
                 </Container>
             </section>
 

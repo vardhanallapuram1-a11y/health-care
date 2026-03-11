@@ -214,7 +214,7 @@ body {
 }
 
 .footer-premium .text-muted {
-  color: rgba(255, 255, 255, 0.7) !important;
+  color: #ffffff !important;
 }
 
 .footer-premium h5,
@@ -223,7 +223,7 @@ body {
 }
 
 .footer-premium .nav-link {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: #ffffff !important;
 }
 
 .footer-premium .nav-link:hover {
@@ -278,9 +278,17 @@ body {
   font-weight: 500;
 }
 
+.footer-premium .footer-link {
+  color: #ffffff !important;
+}
+
 .footer-link:hover {
   color: var(--primary-blue) !important;
   padding-left: 8px;
+}
+
+.footer-premium .footer-link:hover {
+  color: #ffffff !important;
 }
 
 .footer-social-icon {
@@ -789,6 +797,106 @@ p {
   border-radius: 16px;
   padding: 20px 24px;
   box-shadow: 0 4px 20px rgba(0, 174, 255, 0.08);
+}
+
+/* Dedication Styles */
+.dedication-section {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.dedication-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 249, 255, 0.8));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 74, 153, 0.1);
+  border-radius: 32px;
+  padding: 4rem;
+  box-shadow: 0 20px 50px rgba(0, 74, 153, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+.dedication-icon-wrap {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #fff5f5, #ffe0e0);
+  color: #ff4d4d;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  box-shadow: 0 10px 20px rgba(255, 77, 77, 0.1);
+}
+
+.dedication-eyebrow {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: rgba(255, 77, 77, 0.05);
+  color: #ff4d4d;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 77, 77, 0.1);
+}
+
+.dedication-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: #0a1628;
+  margin-bottom: 1rem;
+}
+
+.dedication-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #004a99;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.dedication-text {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #4a5568;
+  max-width: 800px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.dedication-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(255, 77, 77, 0.03), transparent 40%),
+    radial-gradient(circle at bottom left, rgba(0, 74, 153, 0.03), transparent 40%);
+  pointer-events: none;
+  border-radius: 32px;
+}
+
+@media (max-width: 768px) {
+  .dedication-card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .dedication-title {
+    font-size: 2rem;
+  }
+
+  .dedication-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .dedication-text {
+    font-size: 1.1rem;
+  }
 }
 
 .about-goal-icon {

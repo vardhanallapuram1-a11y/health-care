@@ -65,7 +65,7 @@ export default function Footer() {
                     </Col>
                 </Row>
                 <div className="pt-5 border-top border-light d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-                    <p className="small text-white opacity-75 mb-0 order-2 order-md-1">
+                    <p className="small text-white opacity-100 mb-0 order-2 order-md-1">
                         © 2026 <span className="fw-bold text-white">UltraRadX Healthcare</span>. All rights reserved.
                     </p>
                     <div className="d-flex gap-4 order-1 order-md-2">
