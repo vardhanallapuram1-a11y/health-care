@@ -73,7 +73,7 @@ export default function AboutPage() {
                         </div>
                         {/* <span className="dedication-eyebrow">DEDICATION</span> */}
                         <h2 className="dedication-title">Dedicated</h2>
-                        <h3 className="dedication-subtitle">Rajkumar and Santosh</h3>
+                        <h3 className="dedication-subtitle">MR.Rajkumar and MRs.Santosh</h3>
                         <p className="dedication-text">
                             "With deepest gratitude, UltraRadX is proudly dedicated to my parents, Mr. Rajkumar and Mrs. Santosh, whose sacrifices, wisdom, and blessings are the true foundation of this journey."
                         </p>
