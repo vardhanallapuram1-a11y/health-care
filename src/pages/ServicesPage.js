@@ -47,10 +47,10 @@ const services = [
     },
     {
         icon: <Award size={32} />, color: '#c07000', bg: 'linear-gradient(135deg,#fff0d0,#ffe4a0)',
-        title: 'Ultrasound & Doppler Reporting',
-        tagline: 'Expert Sonographic Reads.',
-        desc: 'We provide comprehensive ultrasound interpretation including abdominopelvic, obstetric, thyroid, small parts, and vascular Doppler studies.',
-        features: ['Abdomen & pelvis ultrasound', 'Obstetric & gynae sonography', 'Thyroid & small parts scans', 'Doppler studies (DVT, arterial, venous)'],
+        title: 'Second Opinion Services for Accurate Radiology Decisions',
+        tagline: 'The 3R Advantage',
+        desc: 'Powering second-opinion radiology through Reliability, Responsiveness, and Radiologist Expertise—designed to support clinicians, reduce diagnostic doubt, and improve decision outcomes.',
+        features: ['Reliability', 'Responsiveness', 'Radiologist Expertise'],
     },
     {
         icon: <Target size={32} />, color: '#6d28d9', bg: 'linear-gradient(135deg,#ede9ff,#ddd5ff)',
