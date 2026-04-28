@@ -19,14 +19,32 @@ const PageHero = () => (
 
 export default function ContactPage() {
     const [submitted, setSubmitted] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setSubmitted(true);
+        setIsSubmitting(true);
+        const formData = new FormData(e.target);
+        
+        try {
+            await fetch('https://formsubmit.co/ajax/info@ultraradx.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(Object.fromEntries(formData))
+            });
+        } catch (error) {
+            console.error('Form submission error:', error);
+        } finally {
+            setIsSubmitting(false);
+            setSubmitted(true);
+        }
     };
 
     const contactDetails = [
-        { icon: <Phone size={22} />, label: 'Call Us', value: '+91 8901222201', color: '#004a99', sub: 'Available 24/7' },
+        { icon: <ShieldCheck size={22} />, label: 'LLP Identification Number (LLPIN)', value: 'ACX-7091', color: '#004a99', sub: 'Registration No' },
         { icon: <Mail size={22} />, label: 'Email Us', value: 'info@ultraradx.com', color: '#007a4d', sub: 'We respond within 2 hours' },
         { icon: <MapPin size={22} />, label: 'Registered Office', value: 'Greater Noida, India', color: '#c07000', sub: 'India-based, globally serving' },
         { icon: <Clock size={22} />, label: 'Availability', value: '24 hours · 7 days · 365 days', color: '#007bbd', sub: 'No case left unread' },
@@ -101,31 +119,31 @@ export default function ContactPage() {
                                             <Col md={6}>
                                                 <Form.Group>
                                                     <Form.Label className="form-label-caps">First Name</Form.Label>
-                                                    <Form.Control type="text" className="premium-input shadow-none" placeholder="Jane" required />
+                                                    <Form.Control name="firstName" type="text" className="premium-input shadow-none" placeholder="Jane" required />
                                                 </Form.Group>
                                             </Col>
                                             <Col md={6}>
                                                 <Form.Group>
                                                     <Form.Label className="form-label-caps">Last Name</Form.Label>
-                                                    <Form.Control type="text" className="premium-input shadow-none" placeholder="Doe" required />
+                                                    <Form.Control name="lastName" type="text" className="premium-input shadow-none" placeholder="Doe" required />
                                                 </Form.Group>
                                             </Col>
                                             <Col xs={12}>
                                                 <Form.Group>
                                                     <Form.Label className="form-label-caps">Email Address</Form.Label>
-                                                    <Form.Control type="email" className="premium-input shadow-none" placeholder="jane@hospital.com" required />
+                                                    <Form.Control name="email" type="email" className="premium-input shadow-none" placeholder="jane@hospital.com" required />
                                                 </Form.Group>
                                             </Col>
                                             <Col xs={12}>
                                                 <Form.Group>
                                                     <Form.Label className="form-label-caps">Institution / Organisation</Form.Label>
-                                                    <Form.Control type="text" className="premium-input shadow-none" placeholder="City General Hospital" />
+                                                    <Form.Control name="institution" type="text" className="premium-input shadow-none" placeholder="City General Hospital" />
                                                 </Form.Group>
                                             </Col>
                                             <Col xs={12}>
                                                 <Form.Group>
                                                     <Form.Label className="form-label-caps">Enquiry Type</Form.Label>
-                                                    <Form.Select className="premium-input shadow-none">
+                                                    <Form.Select name="enquiryType" className="premium-input shadow-none">
                                                         <option>New Partnership</option>
                                                         <option>Request a Demo</option>
                                                         <option>Upload a Case</option>
@@ -138,12 +156,12 @@ export default function ContactPage() {
                                             <Col xs={12}>
                                                 <Form.Group>
                                                     <Form.Label className="form-label-caps">Message</Form.Label>
-                                                    <Form.Control as="textarea" rows={4} className="premium-input shadow-none" placeholder="Tell us about your institution's radiology needs..." required />
+                                                    <Form.Control name="message" as="textarea" rows={4} className="premium-input shadow-none" placeholder="Tell us about your institution's radiology needs..." required />
                                                 </Form.Group>
                                             </Col>
                                             <Col xs={12} className="pt-2">
-                                                <button type="submit" className="btn-premium w-100 py-3 border-0 d-flex align-items-center justify-content-center gap-2 fw-bold" style={{ fontSize: '1rem', letterSpacing: '0.5px' }}>
-                                                    Send Message <ChevronRight size={18} />
+                                                <button type="submit" disabled={isSubmitting} className="btn-premium w-100 py-3 border-0 d-flex align-items-center justify-content-center gap-2 fw-bold" style={{ fontSize: '1rem', letterSpacing: '0.5px' }}>
+                                                    {isSubmitting ? 'Sending...' : 'Send Message'} {!isSubmitting && <ChevronRight size={18} />}
                                                 </button>
                                             </Col>
                                         </Form>
