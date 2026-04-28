@@ -23,7 +23,7 @@
   --bg-teal-soft: #e0f2f1;
   --bg-medical-gray: #f1f5f9;
   /* Soft version of the requested teal */
-  --brand-gradient-horizontal: linear-gradient(to right, #003366 0%, #4a90bc 50%, #99ccff 100%);
+  --brand-gradient-horizontal: #004a99;
   --medical-glass: rgba(255, 255, 255, 0.75);
   --primary-light: #88BBDD;
 }
@@ -333,6 +333,11 @@ body {
 
 .transition {
   transition: all 0.3s ease;
+}
+
+.hover-white:hover {
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
 
 /* Premium Typography */

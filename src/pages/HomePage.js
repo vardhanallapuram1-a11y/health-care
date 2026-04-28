@@ -145,18 +145,18 @@ export default function HomePage() {
             </section>
 
             {/* CTA Banner */}
-            <section className="py-5 section-padding text-center" style={{ background: 'linear-gradient(135deg,#004a99,#0077cc)' }}>
+            <section className="py-5 section-padding text-center bg-white border-top border-light">
                 <Container>
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-                        <h2 className="display-6 fw-bold text-white mb-3">Ready to Partner with UltraRadX?</h2>
-                        <p className="text-white opacity-75 mb-4 mx-auto" style={{ maxWidth: '520px' }}>
+                        <h2 className="display-6 fw-bold mb-3" style={{ color: '#0a1628' }}>Ready to Partner with UltraRadX?</h2>
+                        <p className="text-muted mb-4 mx-auto" style={{ maxWidth: '520px' }}>
                             Join hospitals and imaging centers across the region who trust us for fast, accurate teleradiology.
                         </p>
                         <div className="d-flex gap-3 justify-content-center flex-wrap">
                             <button onClick={() => navigate('/contact')} className="btn-premium py-3 px-5 border-0 d-inline-flex align-items-center gap-2">
                                 Get Started <ChevronRight size={16} />
                             </button>
-                            <button onClick={() => navigate('/about')} className="btn-outline-hero py-3 px-5 d-inline-flex align-items-center gap-2" style={{ borderColor: '#fff', color: '#fff' }}>
+                            <button onClick={() => navigate('/about')} className="btn-outline-hero py-3 px-5 d-inline-flex align-items-center gap-2" style={{ borderColor: 'rgba(0,74,153,0.2)', color: '#004a99' }}>
                                 Learn More
                             </button>
                         </div>

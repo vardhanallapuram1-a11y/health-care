@@ -7,13 +7,13 @@ import Logo from './Logo';
 
 export default function Footer() {
     return (
-        <footer className="footer-premium py-5 bg-white border-top border-light overflow-hidden position-relative">
+        <footer className="footer-premium py-5 border-top border-light overflow-hidden position-relative">
             <Container className="position-relative" style={{ zIndex: 1 }}>
                 <Row className="g-5 justify-content-between mb-5">
                     <Col lg={4} className="mobile-text-center">
                         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
                             <Logo className="h-12" variant="logo1" />
-                            <p className="text-muted fs-6 lh-lg pe-lg-4">
+                            <p className="text-white opacity-75 fs-6 lh-lg pe-lg-4">
                                 Commitment to delivering accurate, timely, and technology-enabled imaging interpretations globally. UltraRadX Healthcare is your dependable partner for the future of radiology.
                             </p>
                         </motion.div>
@@ -49,7 +49,7 @@ export default function Footer() {
                             </Col>
                             <Col md={4} className="mobile-text-center">
                                 <h6 className="footer-heading mb-4 text-white">Follow Us</h6>
-                                <p className="small text-muted mb-4 d-none d-lg-block">Connect with us for the latest updates.</p>
+                                <p className="small text-white opacity-75 mb-4 d-none d-lg-block">Connect with us for the latest updates.</p>
                                 <div className="d-flex justify-content-center justify-content-lg-start gap-3">
                                     <a href="#" className="footer-social-icon facebook" title="Facebook"><Facebook size={20} /></a>
                                     <a href="#" className="footer-social-icon x-social" title="X (Twitter)">
@@ -69,8 +69,8 @@ export default function Footer() {
                         © 2026 <span className="fw-bold text-white">UltraRadX Healthcare</span>. All rights reserved.
                     </p>
                     <div className="d-flex gap-4 order-1 order-md-2">
-                        <a href="#" className="small text-muted text-decoration-none transition">Privacy Policy</a>
-                        <a href="#" className="small text-muted text-decoration-none transition">Terms of Service</a>
+                        <a href="#" className="small text-white opacity-75 text-decoration-none transition hover-white">Privacy Policy</a>
+                        <a href="#" className="small text-white opacity-75 text-decoration-none transition hover-white">Terms of Service</a>
                     </div>
                 </div>
             </Container>
